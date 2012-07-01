@@ -17,10 +17,15 @@ syn keyword casmConstant true false self undef
 " Keywords
 syn keyword casmKeyword assure assert diedie straceon straceoff
 syn keyword casmKeyword skip seqblock endseqblock par endpar let in
-syn keyword casmKeyword if then else print debuginfo push into pop
-syn keyword casmKeyword from forall do call case default of endcase
+syn keyword casmKeyword print debuginfo push into pop
+syn keyword casmKeyword from do call case default of endcase
 syn keyword casmKeyword initially function static controlled derived
 syn keyword casmKeyword enum rule use init option CoreASM symbol
+
+syn keyword casmConditional if then else forall
+
+" Numbers
+syn match casmNumber "\d+"
 
 " Types
 syn keyword casmType Boolean Int String RuleRef List
@@ -40,10 +45,11 @@ syn keyword casmTodo contained TODO FIXME XXX NOTE
 
 highlight link casmConstant Constant
 highlight link casmKeyword Keyword
+highlight link casmConditional Conditional
 highlight link casmOperator Operator
 highlight link casmCommentL Comment
 highlight link casmComment Comment
 highlight link casmType Type
 highlight link casmString String
 highlight link casmTodo Todo
-
+highlight link casmNumber Number
