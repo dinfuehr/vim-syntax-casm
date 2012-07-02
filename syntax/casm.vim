@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language: casm
-" Maintainer: Dominik
-" Last Change: 2012-07-01
+" Maintainer: Dominik Inführ <dominik.infuehr@gmail.com>
+" Last Change: 2012-07-02
 " Version: 0.1
 
 if exists( "b:current_syntax" )
