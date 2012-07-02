@@ -60,3 +60,4 @@ highlight link casmString String
 highlight link casmTodo Todo
 highlight link casmNumber Number
 highlight link casmRuleName Underlined
+highlight link casmRuleRef Underlined
