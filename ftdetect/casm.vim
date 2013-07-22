@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.casm set filetype=casm
+au BufRead,BufNewFile *.casm,*.coreasm set filetype=casm
