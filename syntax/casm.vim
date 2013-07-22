@@ -20,7 +20,8 @@ syn keyword casmKeyword skip seqblock endseqblock par endpar let in
 syn keyword casmKeyword print debuginfo push into pop
 syn keyword casmKeyword from do call case default of endcase
 syn keyword casmKeyword initially function static controlled derived
-syn keyword casmKeyword enum use option symbol
+syn keyword casmKeyword enum universe use option symbol
+syn keyword casmKeyword with extend exists choose implies memberof
 
 syn keyword casmKeyword rule init nextgroup=casmRuleName skipwhite
 syn match casmRuleName contained "[a-zA-Z_][a-zA-Z0-9\_]*"
@@ -30,7 +31,7 @@ syn match casmRuleRef "@" nextgroup=casmRuleName skipwhite
 syn keyword casmKeyword CoreASM nextgroup=casmProgramName skipwhite
 syn match casmProgramName contained "[a-zA-Z_][a-zA-Z0-9\_]*"
 
-syn keyword casmConditional if then else forall
+syn keyword casmConditional if then else forall ifnone
 
 " Numbers
 syn match casmNumber "\d+"
